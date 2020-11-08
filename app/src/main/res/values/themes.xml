@@ -13,6 +13,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="MainBackground">@color/colourLightThemeBg</item>
+        <item name="cardView">@color/white</item>
     </style>
 
     <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">

@@ -26,5 +26,5 @@ abstract class NotezPadDatabase :RoomDatabase() {
 
     abstract fun toDosDao():ToDosDao
 
-    abstract fun NotesDao():NotesDao
+    abstract fun notesDao():NotesDao
 }

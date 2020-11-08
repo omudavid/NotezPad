@@ -8,16 +8,16 @@ import com.hackerman.notezpad.ui.model.ToDo
 class RepositoryImpl (private val toDosDao: ToDosDao,
                       private val notesDao: NotesDao):Repository {
 
-    override fun addNote(note: Note) = notesDao.addNote(note)
+    override suspend fun addNote(note: Note) = notesDao.addNote(note)
 
-    override fun getNotes(): List<Note> = notesDao.getNotes()
+    override suspend fun getNotes(): List<Note> = notesDao.getNotes()
 
-    override fun deleteNote(note: Note) = notesDao.deleteNote(note)
+    override suspend fun deleteNote(note: Note) = notesDao.deleteNote(note)
 
-    override fun addTodo(toDo: ToDo) = toDosDao.addToDO(toDo)
+    override suspend fun addTodo(toDo: ToDo) = toDosDao.addToDO(toDo)
 
-    override fun getToDos(): List<ToDo> = toDosDao.getToDos()
+    override suspend fun getToDos(): List<ToDo> = toDosDao.getToDos()
 
-    override fun deleteTodo(toDo: ToDo) = toDosDao.deleteToDo(toDo)
+    override suspend fun deleteTodo(toDo: ToDo) = toDosDao.deleteToDo(toDo)
 
 }
